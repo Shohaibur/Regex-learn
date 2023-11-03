@@ -1,2 +1,2 @@
 # regex-learn-javascript
-Learing regular expression using Javascript
+Learning regular expression using Javascript

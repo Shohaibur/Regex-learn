@@ -4,6 +4,7 @@ let re;
 let str;
 let result;
 
+//source ; only print the regular expression
 re = /hello/; //regex defined using /regex/ format
 console.log(re); //here 'hello' is a regular expression
 console.log(re.source); //only print the regular expression 'hello'

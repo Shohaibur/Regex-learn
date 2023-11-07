@@ -38,6 +38,28 @@ str = "256 is number";
 re = /^\+880[0-9]/;
 str = "+8801882576086";
 
+//Quantifier - Braces {}
+// /fo{2}/ ; o must have 2 times
+re = /hel{2}o/;
+str = "hello";
+// limit with {}
+re = /fo{2,5}/; // min 2 , max 5
+str = "foo"; 
+str = "fooo";
+str = "foooo";
+str = "fooooo";
+// range atleast x times at most infinite
+re = /fo{2,}/;
+str = "foo";
+str = "foooooooooooooooo";
+
+// Parentheses () - Grouping
+//Bangladeshi number verification
+re = /^\+8801([0-9]){9}$/; // here after +8801 there must be exactly 9 numbers 
+str = "+8801882576086";
+
+
+
 
 
 function reTest(re,str){

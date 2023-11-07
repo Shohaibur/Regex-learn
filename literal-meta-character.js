@@ -15,7 +15,7 @@ str = "Nala is my cat's name";
 re=/cat$/i;
 str = "Nala is the name of my Cat";
 
-// /./ ; matches any one character;
+// /./ ; must have any one character;
 re= /^n.la$/i;
 str = "Nula";
 re = /n.la/i;

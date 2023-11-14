@@ -21,7 +21,43 @@ str = "/*";
 
 // checks any digit
 re = /\d/;
-str = "abc123";
+str = "ab123";
+
+//one or more digit
+re = /\d+/;
+str = "54";
+
+//non digit character
+re = /\D/;
+str = "A";
+
+//accept space 
+re = /\s/;
+str = "shoaib rochi  ";
+
+// accept no space 
+re = /\S/;
+str = "ABCD";
+
+//Word boundary /foo\b/; cannot have any character attached with foo;
+re =/computer\b/;
+str = "OKay computer1 "; //doesn't match
+str = "OKay computer 1"; 
+re = /\bOkay/;
+str = "I'mOKay"; //doesn't match
+str = "I'm Okay"; 
+
+//Assertions (conditioning)
+// matches A only if A is before B
+re = /A(?=B)/; 
+str = "ABC";
+re = /A(?=Bc)/; 
+str = "ABc";
+
+// matched A only if after A any other character than B
+re = /A(?!B)/;
+str = "AC";
+
 
 
 

@@ -42,12 +42,14 @@ str = "+8801882576086";
 // /fo{2}/ ; o must have 2 times
 re = /hel{2}o/;
 str = "hello";
+
 // limit with {}
 re = /fo{2,5}/; // min 2 , max 5
 str = "foo"; 
 str = "fooo";
 str = "foooo";
 str = "fooooo";
+
 // range atleast x times at most infinite
 re = /fo{2,}/;
 str = "foo";
